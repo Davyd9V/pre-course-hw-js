@@ -1,11 +1,3 @@
 let number1 = Math.floor(Math.random() * 100);
-
-function proverka() {
-    if (number1 % 2 === 0) {
-        return [number1, 'Это четное число'];
-    } else {
-        return [number1, 'Это нечетное число'];
-    };
-};
-let result = proverka();
-console.log(`${result[0]}: ${result[1]}`);
+let message = `${number1}: Это ${number1 % 2 === 0 ? 'четное' : 'нечетное'} число`;
+console.log(message);
